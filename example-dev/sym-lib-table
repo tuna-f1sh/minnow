@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TMUX1574RSVR")(type "KiCad")(uri "${KIPRJMOD}/TMUX1574RSVR.kicad_sym")(options "")(descr ""))
+)
