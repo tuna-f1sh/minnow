@@ -1625,9 +1625,6 @@
   (junction (at 307.848 59.944) (diameter 0) (color 0 0 0 0)
     (uuid 11afcfac-42b9-46f0-b603-d2230d6d53b1)
   )
-  (junction (at 273.05 200.152) (diameter 0) (color 0 0 0 0)
-    (uuid 149c0318-92c3-43fc-837f-125a9d271bdc)
-  )
   (junction (at 225.806 52.07) (diameter 0) (color 0 0 0 0)
     (uuid 15b7f9ea-bb6d-4a4b-b5f6-e59a34105a2b)
   )
@@ -1640,17 +1637,11 @@
   (junction (at 112.268 96.774) (diameter 0) (color 0 0 0 0)
     (uuid 18cd4913-aee7-4777-a26d-29203d992fb5)
   )
-  (junction (at 273.05 202.692) (diameter 0) (color 0 0 0 0)
-    (uuid 2ca82fa2-37dc-444a-8dda-1fcc566a786b)
-  )
   (junction (at 62.484 35.814) (diameter 0) (color 0 0 0 0)
     (uuid 39eec9f4-c546-4a5a-a4b8-6d02f51a0cf7)
   )
   (junction (at 112.268 94.234) (diameter 0) (color 0 0 0 0)
     (uuid 3e37166e-f44b-48d8-afe6-748fbea986b1)
-  )
-  (junction (at 273.05 197.612) (diameter 0) (color 0 0 0 0)
-    (uuid 415e0713-4008-46dc-8e60-fad91cbf4b34)
   )
   (junction (at 255.524 90.424) (diameter 0) (color 0 0 0 0)
     (uuid 42632c24-3a9b-4a87-b360-35c404cf693d)
@@ -1697,9 +1688,6 @@
   (junction (at 92.456 105.918) (diameter 0) (color 0 0 0 0)
     (uuid bc246517-f158-4336-a157-dda12e04e786)
   )
-  (junction (at 273.05 205.232) (diameter 0) (color 0 0 0 0)
-    (uuid c033f8e6-5e15-45c0-ad43-9687a0afd1d9)
-  )
   (junction (at 187.198 136.144) (diameter 0) (color 0 0 0 0)
     (uuid c81684c5-bb66-4980-b4bd-bb23f1c6fd6f)
   )
@@ -1736,9 +1724,6 @@
   (junction (at 70.104 47.244) (diameter 0) (color 0 0 0 0)
     (uuid e4f40706-95c9-44c8-a408-a01dc1e30529)
   )
-  (junction (at 73.152 145.034) (diameter 0) (color 0 0 0 0)
-    (uuid efb92356-cab6-4fbd-8a3e-746f106c5acf)
-  )
   (junction (at 165.862 124.714) (diameter 0) (color 0 0 0 0)
     (uuid f7c3de30-795f-4cd3-a596-bf7f4535e1ca)
   )
@@ -1751,10 +1736,6 @@
   (no_connect (at 240.284 200.152) (uuid caff62c7-b133-4a31-914e-35b2f0c854c3))
   (no_connect (at 240.284 205.232) (uuid eff2c509-5047-44cf-a1f2-242b67454691))
 
-  (wire (pts (xy 280.416 202.692) (xy 273.05 202.692))
-    (stroke (width 0) (type default))
-    (uuid 007be4f4-0432-403d-80d9-d79446005719)
-  )
   (wire (pts (xy 49.784 187.96) (xy 49.784 179.07))
     (stroke (width 0) (type default))
     (uuid 0103dfad-577f-447b-b3f3-3aaad8f584f2)
@@ -1875,7 +1856,7 @@
     (stroke (width 0) (type default))
     (uuid 25eb9c38-43a9-4831-8c05-7d143bfe3a2c)
   )
-  (wire (pts (xy 270.764 202.692) (xy 273.05 202.692))
+  (wire (pts (xy 270.764 202.692) (xy 280.416 202.692))
     (stroke (width 0) (type default))
     (uuid 28ac0fd2-bb1f-49d9-ab0e-9b75aefec675)
   )
@@ -2027,11 +2008,11 @@
     (stroke (width 0) (type default))
     (uuid 6d997ac9-6186-42c2-a6ad-4fe3807eb166)
   )
-  (wire (pts (xy 69.85 145.034) (xy 73.152 145.034))
+  (wire (pts (xy 69.85 145.034) (xy 110.236 145.034))
     (stroke (width 0) (type default))
     (uuid 6fcf595f-cc4f-4763-811a-58cd6c2dac39)
   )
-  (wire (pts (xy 273.05 200.152) (xy 280.416 200.152))
+  (wire (pts (xy 270.764 200.152) (xy 280.416 200.152))
     (stroke (width 0) (type default))
     (uuid 71869f4f-78b5-49a1-8850-35a46df9c30d)
   )
@@ -2122,10 +2103,6 @@
   (wire (pts (xy 234.696 217.932) (xy 240.284 217.932))
     (stroke (width 0) (type default))
     (uuid 8ca7f032-0f1f-4fc6-9e33-99ec59e558b6)
-  )
-  (wire (pts (xy 73.152 145.034) (xy 110.236 145.034))
-    (stroke (width 0) (type default))
-    (uuid 8d4a68eb-b422-4800-aeba-51988a20137a)
   )
   (wire (pts (xy 54.864 54.864) (xy 54.864 78.994))
     (stroke (width 0) (type default))
@@ -2259,7 +2236,7 @@
     (stroke (width 0) (type default))
     (uuid d2150045-0b8b-4cd9-984d-5d881d18146c)
   )
-  (wire (pts (xy 280.416 205.232) (xy 273.05 205.232))
+  (wire (pts (xy 270.764 205.232) (xy 280.416 205.232))
     (stroke (width 0) (type default))
     (uuid d27af4d7-fbf9-4d6b-94ef-6c12189cfcc8)
   )
@@ -2271,11 +2248,7 @@
     (stroke (width 0) (type default))
     (uuid d359bc5f-2f0d-4d02-b5d2-b3df968ed45a)
   )
-  (wire (pts (xy 270.764 200.152) (xy 273.05 200.152))
-    (stroke (width 0) (type default))
-    (uuid d47d849c-7a66-4f51-814c-6ffb3eafb929)
-  )
-  (wire (pts (xy 270.764 197.612) (xy 273.05 197.612))
+  (wire (pts (xy 270.764 197.612) (xy 280.416 197.612))
     (stroke (width 0) (type default))
     (uuid d49f96d4-8376-443b-a72d-3954d5e6024a)
   )
@@ -2351,17 +2324,9 @@
     (stroke (width 0) (type default))
     (uuid e9853164-c4f1-49b9-a9ab-4deba3d2af04)
   )
-  (wire (pts (xy 273.05 197.612) (xy 280.416 197.612))
-    (stroke (width 0) (type default))
-    (uuid eaec0ae1-2473-409f-bdd3-5c27a0718f3d)
-  )
   (wire (pts (xy 62.484 35.814) (xy 54.864 35.814))
     (stroke (width 0) (type default))
     (uuid ec2c47e9-7553-4104-8032-9f0c5bf7088b)
-  )
-  (wire (pts (xy 270.764 205.232) (xy 273.05 205.232))
-    (stroke (width 0) (type default))
-    (uuid ec9ddaca-5165-42eb-b60d-df42630dfc16)
   )
   (wire (pts (xy 67.564 96.774) (xy 92.456 96.774))
     (stroke (width 0) (type default))
@@ -4842,7 +4807,7 @@
     (property "Config" "nofit" (at 73.406 124.714 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 968eb511-b078-4e91-9318-9f58b427d80b))
+    (pin "1" (uuid beda8a9a-ae99-483a-aade-c08e5a22e4a9))
     (instances
       (project "USB"
         (path "/abe08c89-73f7-4625-b1e5-d5b33729a7ca"
@@ -5860,44 +5825,6 @@
     )
   )
 
-  (symbol (lib_id "Connector:TestPoint_Small") (at 73.152 145.034 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 4e508a10-6aec-4208-8511-a8aff21987b5)
-    (property "Reference" "TP7" (at 73.152 143.764 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 74.6252 144.2974 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight" (at 78.232 145.034 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 78.232 145.034 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Config" "nofit" (at 73.152 145.034 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5dd4c77e-2796-45fa-ade5-523df608a3a2))
-    (instances
-      (project "USB"
-        (path "/abe08c89-73f7-4625-b1e5-d5b33729a7ca"
-          (reference "TP7") (unit 1)
-        )
-      )
-      (project "spirit_logger_hardware"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cec0ac2b-8788-4205-bc11-fcadefc26e0e"
-          (reference "TP7") (unit 1)
-        )
-      )
-      (project "usb-dam"
-        (path "/eb1f9132-3dcd-4de4-9f05-c2db01d52e0f"
-          (reference "TP1") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 65.024 191.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4f605720-80d4-4a22-a11c-f1868c99ba09)
@@ -6248,7 +6175,7 @@
     (property "Config" "nofit" (at 73.406 117.094 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 397d36c0-f1d0-46ea-9428-206ddc740535))
+    (pin "1" (uuid 99c041ac-e561-4856-90ca-5176fce974a8))
     (instances
       (project "USB"
         (path "/abe08c89-73f7-4625-b1e5-d5b33729a7ca"
@@ -6393,44 +6320,6 @@
       (project "usb-dam"
         (path "/eb1f9132-3dcd-4de4-9f05-c2db01d52e0f"
           (reference "JP3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint_Small") (at 273.05 197.612 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 66a9c551-4d3a-459b-8a96-2cd6a3b927ce)
-    (property "Reference" "TP9" (at 273.05 196.215 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 274.5232 196.8754 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight" (at 278.13 197.612 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 278.13 197.612 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Config" "nofit" (at 273.05 197.612 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 434f0147-8a82-4ffb-91e0-78d9367dcc14))
-    (instances
-      (project "USB"
-        (path "/abe08c89-73f7-4625-b1e5-d5b33729a7ca"
-          (reference "TP9") (unit 1)
-        )
-      )
-      (project "spirit_logger_hardware"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cec0ac2b-8788-4205-bc11-fcadefc26e0e"
-          (reference "TP9") (unit 1)
-        )
-      )
-      (project "usb-dam"
-        (path "/eb1f9132-3dcd-4de4-9f05-c2db01d52e0f"
-          (reference "TP10") (unit 1)
         )
       )
     )
@@ -6900,44 +6789,6 @@
     )
   )
 
-  (symbol (lib_id "Connector:TestPoint_Small") (at 273.05 202.692 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 932efe30-5413-435f-ac0b-19a79a29d748)
-    (property "Reference" "TP9" (at 273.05 201.295 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 274.5232 201.9554 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight" (at 278.13 202.692 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 278.13 202.692 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Config" "nofit" (at 273.05 202.692 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 760b8a23-c9dc-476e-83d7-92329aa881cd))
-    (instances
-      (project "USB"
-        (path "/abe08c89-73f7-4625-b1e5-d5b33729a7ca"
-          (reference "TP9") (unit 1)
-        )
-      )
-      (project "spirit_logger_hardware"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cec0ac2b-8788-4205-bc11-fcadefc26e0e"
-          (reference "TP9") (unit 1)
-        )
-      )
-      (project "usb-dam"
-        (path "/eb1f9132-3dcd-4de4-9f05-c2db01d52e0f"
-          (reference "TP6") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Power_Management:SiP32431DR3") (at 177.292 138.684 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 94062ce5-32be-4095-a873-bfb5addf682b)
@@ -6987,44 +6838,6 @@
       (project "usb-dam"
         (path "/eb1f9132-3dcd-4de4-9f05-c2db01d52e0f"
           (reference "U2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint_Small") (at 273.05 200.152 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 94c42778-cf93-4dfd-964e-24793dc39663)
-    (property "Reference" "TP9" (at 273.05 198.755 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 274.5232 199.4154 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight" (at 278.13 200.152 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 278.13 200.152 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Config" "nofit" (at 273.05 200.152 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e218d695-ddd5-4261-b9f9-8543acaa7064))
-    (instances
-      (project "USB"
-        (path "/abe08c89-73f7-4625-b1e5-d5b33729a7ca"
-          (reference "TP9") (unit 1)
-        )
-      )
-      (project "spirit_logger_hardware"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cec0ac2b-8788-4205-bc11-fcadefc26e0e"
-          (reference "TP9") (unit 1)
-        )
-      )
-      (project "usb-dam"
-        (path "/eb1f9132-3dcd-4de4-9f05-c2db01d52e0f"
-          (reference "TP9") (unit 1)
         )
       )
     )
@@ -7135,44 +6948,6 @@
     )
   )
 
-  (symbol (lib_id "Connector:TestPoint_Small") (at 273.05 205.232 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a3df10c1-6da6-4ff5-a500-9993905c18f2)
-    (property "Reference" "TP9" (at 273.05 203.835 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 274.5232 204.4954 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight" (at 278.13 205.232 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 278.13 205.232 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Config" "nofit" (at 273.05 205.232 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3b6a1355-2beb-40c6-9a7b-26892ecfcd41))
-    (instances
-      (project "USB"
-        (path "/abe08c89-73f7-4625-b1e5-d5b33729a7ca"
-          (reference "TP9") (unit 1)
-        )
-      )
-      (project "spirit_logger_hardware"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/cec0ac2b-8788-4205-bc11-fcadefc26e0e"
-          (reference "TP9") (unit 1)
-        )
-      )
-      (project "usb-dam"
-        (path "/eb1f9132-3dcd-4de4-9f05-c2db01d52e0f"
-          (reference "TP11") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Connector:TestPoint_Small") (at 73.406 122.174 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a42094f0-3c43-407a-b72d-43dbc4a0ee67)
@@ -7191,7 +6966,7 @@
     (property "Config" "nofit" (at 73.406 122.174 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 563b5e4c-7a99-4bff-a3e8-fb9ceebbe656))
+    (pin "1" (uuid bf05174a-3348-4f06-ae0f-a8443b6b6980))
     (instances
       (project "USB"
         (path "/abe08c89-73f7-4625-b1e5-d5b33729a7ca"
@@ -7704,7 +7479,7 @@
     (property "Config" "nofit" (at 73.406 114.554 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b09fb4f1-3620-452a-b083-060301591299))
+    (pin "1" (uuid 9dff64b8-9cbe-45c3-ba2f-c927aab60415))
     (instances
       (project "USB"
         (path "/abe08c89-73f7-4625-b1e5-d5b33729a7ca"
