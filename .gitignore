@@ -8,7 +8,7 @@ prod/
 Gerber/
 Gerbers/
 exports/
-build*
+build*/
 shapes3d/
 dist/
 *.egg-info
