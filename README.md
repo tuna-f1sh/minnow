@@ -59,6 +59,13 @@ First switch the VCCIO source from VTARGET - see 'VCCIO Selection' - as logic wi
 
 The cable to the device is probably not a USB 3.1+ (or a bad one) and does not include the alternate mode pins. Use a cable tester to continuity test the cable or find a better one! See 'Cable'.
 
+### How can I configure/use the FT230?
+
+See [ftx-prog](https://github.com/richardeoin/ftx-prog), the main [FTDI utilities page](https://ftdichip.com/utilities/) or the [pyftdi module](https://eblot.github.io/pyftdi/tools.html). The GPIO pins can be changed at runtime or non-volatile with the EEPROM.
+
+I personally use the 'ftconf.py' script as part of _pyftdi_ to provision new devices using the './pyftdi-minnow.ini' EEPROM config and a serial generator:
+`python pyftdi/bin/ftconf.py -d ftdi://ftdi:ft-x:1/1 -i minnow.ini -s 2310001 -u`
+
 # Useful Links
 
 * [SWD over USB-C](https://github.com/BitterAndReal/SWD-over-USB-C)
