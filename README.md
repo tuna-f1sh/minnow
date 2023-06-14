@@ -35,9 +35,29 @@ I've included an example schematic for the device end: './example-dev/usb-dam.ki
 
 ## FAQ
 
-* What's the default configuration? USB host to device; device powered; full SWD on debug headers.
+### What's the default configuration? 
 
-More to come when I bring up the first board!
+USB host to device; device powered; full SWD on debug headers; VCCIO from VTARGET.
+
+### VCCIO selection
+
+By default, VCCIO for the FT230 is supplied from VTARGET (< 10 uA current demand from logic gates) to ensure the same logic level as the target. VCCIO controls the logic level for the GPIO and UART. Cut JP5 1-2 and link 2-3 to use JP6 source - default 3V3 1-2, 2-3 VEXT for external source (1V8 for example). **If using a VCCIO source less than 3V3, one should take the LEDs out of circuit by removing R1 and R2 as they are pulled to 3V3.**
+
+### Why aren't the UART act LEDs blinking?
+
+Logic level is sourced from VCCIO; VTARGET from the device by default. If no device is attached, there is no logic level and so nothing to sink the LEDs or send UART for that matter. Consider this a feature not a bug since they don't blink if nothing is output/listening 🙂. To change this, VCCIO can be self-supplied with JP5 2-3 - see 'VCCIO Selection'.
+
+### Why doesn't the FT230 USB UART work?
+
+One must switch SW1:1 ON to enable USB -> FT230 rather than device. Also be aware that the default configuration VCCIO is supplied from the device and without this there is no logic on the UART/GPIO pins. See 'VCCIO Selection'. It's the reason I didn't include a GPIO to the device power since it would not work without an external VCCIO source.
+
+### How can I control the device power with the FT230
+
+First switch the VCCIO source from VTARGET - see 'VCCIO Selection' - as logic will be required without the device. Add the resistor R15 (680R or anthing to protect GPIO) to link CB3 to the load switch. It's active LOW.
+
+### The device is powered but no DAM pins are working
+
+The cable to the device is probably not a USB 3.1+ (or a bad one) and does not include the alternate mode pins. Use a cable tester to continuity test the cable or find a better one! See 'Cable'.
 
 # Useful Links
 
