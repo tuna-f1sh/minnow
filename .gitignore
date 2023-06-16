@@ -1,7 +1,9 @@
+devices.txt
 output/
 exports/
 ref/
 .vagrant
+bom/
 
 # Output folders
 prod/
