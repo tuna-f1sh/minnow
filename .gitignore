@@ -1,4 +1,4 @@
-devices.txt
+devices*.txt
 output/
 exports/
 ref/

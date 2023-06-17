@@ -35,25 +35,26 @@ def get_first_device():
     devices = Ftdi.list_devices_urls()
     return select_device(devices)
 
-def get_device_num():
+def get_device_num(fn: str = 'devices.txt'):
     # create file if not exists
-    if not os.path.isfile('devices.txt'):
-        logger.warning("Creating devices.txt")
-        open('devices.txt', 'w').close()
+    if not os.path.isfile(fn):
+        logger.warning(f"Creating {fn}")
+        open(fn, 'w').close()
 
-    with open('devices.txt', 'r') as f:
+    with open(fn, 'r') as f:
         lines = f.readlines()
         return len(lines)
 
 VERSION = 0x1
 DEVICE = get_first_device()[0]
-NUM = get_device_num()
 DT = datetime.datetime.now()
 YEAR = DT.year % 100
-SERIAL = f'{YEAR:02d}{VERSION:02x}{NUM:04d}'
+FILE = f'./devices_{YEAR:02d}{VERSION:01x}.txt'
+NUM = get_device_num(FILE)
+SERIAL = f'{YEAR:02d}{VERSION:01x}{NUM:04d}'
 logger.info(f"Configuring device: {DEVICE}, serial: {SERIAL}")
 
-with open('devices.txt', 'a') as f:
+with open(FILE, 'a') as f:
     f.write(f'{DT.isoformat()},{DEVICE},{SERIAL}\n')
 
 # args for ftconf

@@ -71,3 +71,4 @@ I personally use the 'ftconf.py' script as part of _pyftdi_ to provision new dev
 * [SWD over USB-C](https://github.com/BitterAndReal/SWD-over-USB-C)
 * [USB Type-C](https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf)
 * [ARM JTAG/SWD Interface](https://developer.arm.com/documentation/101636/0100/Debug-and-Trace/JTAG-SWD-Interface)
+* [FT230X datasheet](https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf)
