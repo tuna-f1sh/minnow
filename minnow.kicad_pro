@@ -53,19 +53,17 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.15,
+          "via_gap": 0.0,
+          "width": 0.2
         }
       ],
       "drc_exclusions": [
         "lib_footprint_issues|163777301|57350000|6e02c004-4bfb-49cc-a153-9738c977f897|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|163777301|57586198|6e02c004-4bfb-49cc-a153-9738c977f897|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|152917218|50309999|0b8cb4d5-4ed6-4f69-8181-0c00a660328f|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|153000000|50309999|0b8cb4d5-4ed6-4f69-8181-0c00a660328f|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|157455000|39600000|82528882-aced-4612-9027-a7ddf59cce60|00000000-0000-0000-0000-000000000000",
         "lib_footprint_mismatch|157686105|39250000|82528882-aced-4612-9027-a7ddf59cce60|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|174981250|39249999|7be4ce6e-8702-4e65-8680-3ca77933f93d|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|175865000|40749999|7be4ce6e-8702-4e65-8680-3ca77933f93d|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|183050000|50309999|55f4e0dd-59dc-4daf-b398-cf1d3c4469ae|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|183132781|50309999|55f4e0dd-59dc-4daf-b398-cf1d3c4469ae|00000000-0000-0000-0000-000000000000"
+        "lib_footprint_mismatch|174981250|39249999|7be4ce6e-8702-4e65-8680-3ca77933f93d|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "version": 2
@@ -122,7 +120,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.15,
+        "min_clearance": 0.12,
         "min_connection": 0.09999999999999999,
         "min_copper_edge_clearance": 0.09999999999999999,
         "min_hole_clearance": 0.25,
@@ -134,7 +132,7 @@
         "min_text_height": 0.6,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.125,
+        "min_track_width": 0.12,
         "min_via_annular_width": 0.09999999999999999,
         "min_via_diameter": 0.5,
         "solder_mask_clearance": 0.0,
@@ -436,7 +434,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.12,
         "diff_pair_gap": 0.15,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,

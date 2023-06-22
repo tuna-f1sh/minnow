@@ -25,7 +25,13 @@ Minnow is a tool for using DAM (Debug Accessory Mode), providing an interface to
 
 ## Cable
 
-The cable between Minnow and the target device needs to be a **complete USB-C cable** with all [Alternate Mode](https://en.wikipedia.org/wiki/USB-C#Alternate_Mode) wires. USB 3.1+, DisplayPort, Thunderbolt and HDMI rated cables _should_ include these. It may seem obvious but this is something to double check if things are not working as expected - not all cables are created equally!
+If a cable is required between Minnow and the device (TS), the cable needs to be a **complete USB-C extension cable** with all [Alternate Mode](https://en.wikipedia.org/wiki/USB-C#Alternate_Mode) wires. USB 3.1+, DisplayPort, Thunderbolt and HDMI rated cables _should_ include these. Here is an example: https://thepihut.com/products/usb-c-extension-cable-for-raspberry-pi-4
+
+USB-C extension cables are not [technically specification compliant](https://hackaday.com/2022/12/27/all-about-usb-c-illegal-adapters/) but one is required for DAM because no compliant male-male cable will supply both CC1 and CC2 between the the DTS and TS. See [USB Type-C](https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf): B.2.3.1.
+
+![highlighted USB-C Spec B.2.3.1](./media/usb-c-dam-cable.png)
+
+I learnt this the hard way: R1 Minnow had a recepticle for both the host and device and no cable worked to enable USB DAM using the CC pull-ups with logic AND. As the specification says, this is why a direct plug is required for USB DAM mode and why Minnow R2 now has one.
 
 The cable to the host can be a USB 2.0.
 
