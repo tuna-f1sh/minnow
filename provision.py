@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Provision a new Minnow device with a unique incrementing serial number and records the device and serial number in a file
 
