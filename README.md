@@ -1,9 +1,9 @@
 # Minnow - USB-C DAM Tool
 
-Minnow is a tool for using DAM (Debug Accessory Mode), providing an interface to the SWD/JTAG and/or UART from the device. It expands upon [this concept](https://github.com/BitterAndReal/SWD-over-USB-C) to include a USB-UART and some utility for use within test rigs. It could be considered SWD over DAM with a sprinkling of [USB cereal](https://github.com/oxda/usb-cereal) - unlike usb-cereal it does not use the Chomebook UART mapping in favour of maintaining USB-C rotational symmetry.
+Minnow is a tool for using DAM (Debug Accessory Mode), providing an interface to SWD or JTAG and/or UART from the device. It expands upon [this concept](https://github.com/BitterAndReal/SWD-over-USB-C) to include a USB-UART and some utility for use within test rigs. It could be considered SWD over DAM with a sprinkling of [USB cereal](https://github.com/oxda/usb-cereal) - unlike usb-cereal it does not use the Chomebook UART mapping in favour of maintaining USB-C rotational symmetry.
 
-* Enables and interfaces USB DAM configured in image below; SWD/JTAG over USB-C.
-* Provides board designer the option of using RX+ for NRST/RXD and RX- for SWO/TXD - either single-wire trace communication or UART.
+* Enables and interfaces USB DAM configured in image below; Full SWD or JTAG over USB-C.
+* Provides board designer the option of using RX+ for NRST/RXD and RX- for SWO/TXD - either single-wire trace communication (RTT) or UART.
 * Four configurable GPIO on FT230 for test rig control of UUT: power enable; RX pin control; reset.
 * TagConnect TC2030 and ARM 10-pin header to debugger.
 * USB pass-through or FT230 USB UART to device.
@@ -15,9 +15,11 @@ Minnow is a tool for using DAM (Debug Accessory Mode), providing an interface to
 
 # Status and Obtaining
 
-* Revision 1 is my first release to production, which I will assemble and test; the design is not yet tested.
-* Following this I will make any required changes then order more assemblies and sell on Tindie.
-* Since it's a development tool, it uses 0603 so can be assembled by hand.
+[The latest release](https://github.com/tuna-f1sh/minnow/releases/latest) is full tested and I have PCBAs for purchase:
+
+* [Purchase from my shop](https://shop.jbrengineering.co.uk/product/minnow-usb-c-debug-accessory-mode-tool-dam/)
+* [Purchase from Tindie](https://www.tindie.com/products/jbrengineering/minnow-usb-c-debug-accessory-mode-tool-dam/)
+* Since it's a development tool, it uses 0603 so can be easily assembled/modified by hand.
 
 # Usage
 
@@ -25,7 +27,7 @@ Minnow is a tool for using DAM (Debug Accessory Mode), providing an interface to
 
 ## Cable
 
-If a cable is required between Minnow and the device (TS), the cable needs to be a **complete USB-C extension cable** with all [Alternate Mode](https://en.wikipedia.org/wiki/USB-C#Alternate_Mode) wires. USB 3.1+, DisplayPort, Thunderbolt and HDMI rated cables _should_ include these. Here is an example: https://thepihut.com/products/usb-c-extension-cable-for-raspberry-pi-4
+If a cable is required between Minnow and the device (TS), the cable needs to be a **complete USB-C extension cable** with all [Alternate Mode](https://en.wikipedia.org/wiki/USB-C#Alternate_Mode) wires. USB 3.1+, DisplayPort, Thunderbolt and HDMI rated cables _should_ include these. Here are a couple: [usb-c-extension-cable-for-raspberry-pi-4](https://thepihut.com/products/usb-c-extension-cable-for-raspberry-pi-4) or [Tripp Lite U421-20N-G2](https://www.digikey.ch/en/products/detail/tripp-lite/U421-20N-G2/16161593).
 
 USB-C extension cables are not [technically specification compliant](https://hackaday.com/2022/12/27/all-about-usb-c-illegal-adapters/) but one is required for DAM because no compliant male-male cable will supply both CC1 and CC2 between the the DTS and TS. See [USB Type-C](https://www.usb.org/sites/default/files/USB%20Type-C%20Spec%20R2.0%20-%20August%202019.pdf): B.2.3.1.
 
