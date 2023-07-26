@@ -14,7 +14,6 @@ build*/
 shapes3d/
 dist/
 *.egg-info
-*.xml
 
 # Temp
 _saved_*

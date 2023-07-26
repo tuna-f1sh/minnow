@@ -69,8 +69,7 @@ The cable to the device is probably not a USB 3.1+ (or a bad one) and does not i
 
 See [ftx-prog](https://github.com/richardeoin/ftx-prog), the main [FTDI utilities page](https://ftdichip.com/utilities/) or the [pyftdi module](https://eblot.github.io/pyftdi/tools.html). The GPIO pins can be changed at runtime or non-volatile with the EEPROM - see './power-gpio.py' as an example of toggling power to the device.
 
-I personally use the 'ftconf.py' script as part of _pyftdi_ to provision new devices using the './pyftdi-minnow.ini' EEPROM config and a serial generator:
-`python pyftdi/bin/ftconf.py -d ftdi://ftdi:ft-x:1/1 -i minnow.ini -s 2310001 -u`
+I personally use the 'ftconf.py' script as part of _pyftdi_ to provision new devices using './provision.py'.
 
 # Useful Links
 

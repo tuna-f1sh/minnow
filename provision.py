@@ -52,6 +52,9 @@ DT = datetime.datetime.now()
 YEAR = DT.year % 100
 FILE = f'./devices_{YEAR:02d}{VERSION:01x}.txt'
 NUM = get_device_num(FILE)
+
+PRODUCT = 'Minnow USBC DAM 230X'
+MANUFACTURER = 'JBR Engineering'
 SERIAL = f'{YEAR:02d}{VERSION:01x}{NUM:04d}'
 logger.info(f"Configuring device: {DEVICE}, serial: {SERIAL}")
 
@@ -59,6 +62,6 @@ with open(FILE, 'a') as f:
     f.write(f'{DT.isoformat()},{DEVICE},{SERIAL}\n')
 
 # args for ftconf
-sys.argv.extend(['-d', DEVICE, '-i' './pyftdi-minnow.ini', '-s', SERIAL, '-u'])
+sys.argv.extend(['-d', DEVICE, '-p', PRODUCT, '-m', MANUFACTURER, '-s', SERIAL, '-c', 'cbus_func_3=GPIO', '-u'])
 
 ftconf.main()
