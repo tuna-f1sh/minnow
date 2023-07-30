@@ -1,5 +1,7 @@
 # Minnow - USB-C DAM Tool
 
+![./media/minnow-pcb.jpg](./media/minnow-pcb.jpg)
+
 Minnow is a tool for using DAM (Debug Accessory Mode), providing an interface to SWD or JTAG and/or UART from the device. It expands upon [this concept](https://github.com/BitterAndReal/SWD-over-USB-C) to include a USB-UART and some utility for use within test rigs. It could be considered SWD over DAM with a sprinkling of [USB cereal](https://github.com/oxda/usb-cereal) - unlike usb-cereal it does not use the Chomebook UART mapping in favour of maintaining USB-C rotational symmetry.
 
 * Enables and interfaces USB DAM configured in image below; Full SWD or JTAG over USB-C.
@@ -17,13 +19,16 @@ Minnow is a tool for using DAM (Debug Accessory Mode), providing an interface to
 
 [The latest release](https://github.com/tuna-f1sh/minnow/releases/latest) is full tested and I have PCBAs for purchase:
 
-* [Purchase from my shop](https://shop.jbrengineering.co.uk/product/minnow-usb-c-debug-accessory-mode-tool-dam/)
-* [Purchase from Tindie](https://www.tindie.com/products/jbrengineering/minnow-usb-c-debug-accessory-mode-tool-dam/)
+* [Purchase from my shop](https://shop.jbrengineering.co.uk/product/minnow-usb-c-debug-accessory-mode-tool-dam/).
+* [Purchase from Tindie](https://www.tindie.com/products/jbrengineering/minnow-usb-c-debug-accessory-mode-tool-dam/).
 * Since it's a development tool, it uses 0603 so can be easily assembled/modified by hand.
 
 # Usage
 
-![./media/minnow-pcb.jpg](./media/minnow-pcb.jpg)
+![Minnow R2 connected to example DAM board](./media/minnow-dam-board.jpg)
+__Minnow connected to the USB DAM example test board - this would be integrated to a target in practice__
+
+Here is a quick video showing basic usage: https://youtu.be/QQiKsJ13bL0
 
 ## Cable
 
