@@ -31,6 +31,8 @@ __Minnow connected to the USB DAM example test board - this would be integrated 
 
 Here is a quick video showing basic usage: https://youtu.be/QQiKsJ13bL0
 
+**Note** the target device must be designed to enable DAM mode following the USB specification and Minnow DAM USB-C connections. I have made an example board that does this, see below.
+
 ## Cable
 
 If a cable is required between Minnow and the device (TS), the cable needs to be a **complete USB-C extension cable** with all [Alternate Mode](https://en.wikipedia.org/wiki/USB-C#Alternate_Mode) wires. USB 3.1+, DisplayPort, Thunderbolt and HDMI rated cables _should_ include these. Here are a couple: [usb-c-extension-cable-for-raspberry-pi-4](https://thepihut.com/products/usb-c-extension-cable-for-raspberry-pi-4) or [Tripp Lite U421-20N-G2](https://www.digikey.ch/en/products/detail/tripp-lite/U421-20N-G2/16161593).
@@ -39,13 +41,20 @@ USB-C extension cables are not [technically specification compliant](https://hac
 
 ![highlighted USB-C Spec B.2.3.1](./media/usb-c-dam-cable.png)
 
-I learnt this the hard way: R1 Minnow had a recepticle for both the host and device and no cable worked to enable USB DAM using the CC pull-ups with logic AND. As the specification says, this is why a direct plug is required for USB DAM mode and why Minnow R2 now has one.
+I learnt this the hard way: R1 Minnow had a receptacle for both the host and device and no cable worked to enable USB DAM using the CC pull-ups with logic AND. As the specification says, this is why a direct plug is required for USB DAM mode and why Minnow R2 now has one.
 
 The cable to the host can be a USB 2.0.
 
 ## Example Device 
 
-I've included an example schematic for the device end: './example-dev/usb-dam.kicad\_pro'. It can be used for testing and as a foundation for a project with DAM. There are clearly altnative design choices that can be made based on the requirements of the device but it is a good starting point. The layout was done in haste as a means to test the Minnow board!
+I've included an example design for the device end: './example-dev/usb-dam.kicad\_pro' [pdf](./example-dev/usb-dam.pdf). It can be used for testing and as a foundation for a project with DAM. There are clearly alternative design choices that can be made based on the requirements of the device but it is a good starting point. The layout was done in haste as a means to test the Minnow board!
+
+Essentially the target must detect when the CC lines are pulled up with the values specified in the USB specification (500mA @5V 10kΩ on CC1 and 22kΩ on CC2). Because the CC lines might also have 5k1 pull-downs, a potential divider is created:
+
+* CC1: Host 22kΩ pull-up to 5V and device 5.1kΩ pull-down = 0.9V
+* CC2: Host 10kΩ pull-up to 5V and device 5.1kΩ pull-down = 1.7V
+
+The example board uses two op-amps configured as non-inverting amplifiers to buffer this to a logic AND, which enables a 4-channel switch to connect the debug lines to the Alternate Mode pins.
 
 ## FAQ
 
