@@ -2,7 +2,7 @@
 
 ![./media/minnow-pcb.jpg](./media/minnow-pcb.jpg)
 
-Minnow is a tool for using DAM (Debug Accessory Mode), providing an interface to SWD or JTAG and/or UART from the device. It expands upon [this concept](https://github.com/BitterAndReal/SWD-over-USB-C) to include a USB-UART and some utility for use within test rigs. It could be considered SWD over DAM with a sprinkling of [USB cereal](https://github.com/oxda/usb-cereal) - unlike usb-cereal it does not use the Chomebook UART mapping in favour of maintaining USB-C rotational symmetry.
+Minnow is a tool for using DAM (Debug Accessory Mode), providing an interface to SWD or JTAG and/or UART from the device. It expands upon [this concept](https://github.com/BitterAndReal/SWD-over-USB-C) to include a USB-UART and some utility for use within test rigs. It could be considered SWD over DAM with a sprinkling of [USB cereal](https://github.com/oxda/usb-cereal) - unlike usb-cereal it does not use the Chromebook UART mapping in favour of maintaining USB-C rotational symmetry.
 
 * Enables and interfaces USB DAM configured in image below; Full SWD or JTAG over USB-C.
 * Provides board designer the option of using RX+ for NRST/RXD and RX- for SWO/TXD - either single-wire trace communication (RTT) or UART.
@@ -11,9 +11,10 @@ Minnow is a tool for using DAM (Debug Accessory Mode), providing an interface to
 * USB pass-through or FT230 USB UART to device.
 * VTARGET reference from device or external.
 * Maintains USB-C rotational symmetry.
+* Alternate Mode 3.1+ can still be used in the main application with normal hosts.
 
 ![./media/swd_dam_pinout.png](./media/swd_dam_pinout.png)
-[Orignal reference](https://github.com/BitterAndReal/SWD-over-USB-C/blob/main/images/SWD%20over%20USB-C%20Pinout-01.png) modified to include option of UART.
+[Original reference](https://github.com/BitterAndReal/SWD-over-USB-C/blob/main/images/SWD%20over%20USB-C%20Pinout-01.png) modified to include option of UART.
 
 # Status and Obtaining
 
