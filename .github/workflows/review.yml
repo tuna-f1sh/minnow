@@ -1,8 +1,5 @@
 name: Make SCH and PCB review pdf
 
-env:
-  PROJECT_NAME: entree
-
 on:
   push:
     branches: [ main ]
@@ -41,5 +38,4 @@ jobs:
       - name: Upload outputs
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.PROJECT_NAME }}-review-pdf
           path: output/*.pdf

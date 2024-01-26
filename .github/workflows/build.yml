@@ -1,7 +1,6 @@
 name: Build distributable and production files
 
 env:
-  PROJECT_NAME: minnow
   MAKE_DEFAULT: false
   MAKE_PDF: true
   MAKE_PROD: false
