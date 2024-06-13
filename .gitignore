@@ -29,3 +29,4 @@ tags
 *-bak
 *.bak
 _autosave*
+*.log
