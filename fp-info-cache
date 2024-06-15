@@ -1,4 +1,4 @@
-23590466290917539
+23592184745891813
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90313,17 +90313,10 @@ Logo WEEE
 0
 0
 0
-TC2050-IDC
-TAG-CONNECT_TC2050-IDC
-
-
-0
-10
-10
 TMUX1574RSVR
-IC_TMUX1574RSVR
+RSV16_TEX
 
-
+TMUX1574RSVR 
 0
 16
 16
