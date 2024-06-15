@@ -30,3 +30,5 @@ tags
 *.bak
 _autosave*
 *.log
+~DAMLink.kicad_sch.lck
+\#auto_saved_files\#
