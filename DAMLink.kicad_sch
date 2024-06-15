@@ -3597,261 +3597,6 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_02x03_Odd_Even"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 1.27 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_02x03_Odd_Even"
-				(at 1.27 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_2x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_02x03_Odd_Even_1_1"
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 3.81)
-					(end 3.81 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start 3.81 -2.413)
-					(end 2.54 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 0.127)
-					(end 2.54 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 2.667)
-					(end 2.54 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -7330,6 +7075,318 @@
 				)
 			)
 		)
+		(symbol "TC2050-IDC:TC2050-IDC"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -1.27 1.27 0)
+				(effects
+					(font
+						(size 1.8288 1.8288)
+					)
+				)
+			)
+			(property "Value" "*"
+				(at -1.27 -3.81 0)
+				(effects
+					(font
+						(size 1.8288 1.8288)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "TC2050-IDC:TAG-CONNECT_TC2050-IDC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Cbl Plug-Of-Nails 10-Pin w/Legs"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ALTIUM_VALUE" "*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.8288 1.8288)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "MF" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.8288 1.8288)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Availability" "Unavailable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.8288 1.8288)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.8288 1.8288)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "MP" "TC2050-IDC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.8288 1.8288)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.8288 1.8288)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*TAG-CONNECT_TC2050-IDC*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TC2050-IDC_1_0"
+				(rectangle
+					(start 5.08 7.62)
+					(end -5.08 -7.62)
+					(stroke
+						(width 0.254)
+						(type solid)
+						(color 128 0 0 1)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -10.16 5.08 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 5.08)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -5.08 0)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 5.08)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 5.08)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 5.08)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 5.08)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "minnow-rescue:Conn_01x04_Male-Connector"
 			(pin_names
 				(offset 1.016) hide)
@@ -8349,6 +8406,12 @@
 		(uuid "8b82bb47-5ed4-4464-9f3b-08efdf1c0c20")
 	)
 	(junction
+		(at 497.84 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e504b91-23a9-4d1e-9ef2-48538ed38f04")
+	)
+	(junction
 		(at 49.276 112.776)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8560,6 +8623,18 @@
 		(at 64.516 88.9)
 		(uuid "c8483ed5-79dd-46e0-959f-d58e5ba6a2fc")
 	)
+	(no_connect
+		(at 533.4 157.48)
+		(uuid "d0bb139b-bf3f-4b0e-9f44-f0c8cd66e33c")
+	)
+	(no_connect
+		(at 533.4 160.02)
+		(uuid "d2231b92-192b-4a51-b272-70dd32af59b5")
+	)
+	(no_connect
+		(at 533.4 154.94)
+		(uuid "ee7bb0fb-36e9-46a1-a19b-5409f7944487")
+	)
 	(wire
 		(pts
 			(xy 118.11 40.64) (xy 121.92 40.64)
@@ -8579,16 +8654,6 @@
 			(type default)
 		)
 		(uuid "0256c529-f354-4a82-a224-4fd037735417")
-	)
-	(wire
-		(pts
-			(xy 511.302 161.29) (xy 511.302 165.862)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0392beec-a271-4cce-9f90-47a58bd11ac9")
 	)
 	(wire
 		(pts
@@ -8759,16 +8824,6 @@
 			(type default)
 		)
 		(uuid "12f39760-9a01-4aa1-8170-45f11db350fb")
-	)
-	(wire
-		(pts
-			(xy 511.302 161.29) (xy 517.652 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "132d0fa0-05b4-4c7e-b6b5-4747b201451a")
 	)
 	(wire
 		(pts
@@ -9062,6 +9117,16 @@
 	)
 	(wire
 		(pts
+			(xy 497.84 162.56) (xy 513.08 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea2a703-ec2c-434a-90b6-0b7282c03b16")
+	)
+	(wire
+		(pts
 			(xy 216.662 199.644) (xy 221.742 199.644)
 		)
 		(stroke
@@ -9309,16 +9374,6 @@
 			(type default)
 		)
 		(uuid "3d4bbb36-5c35-44d2-8a3b-3b23cf9e34b7")
-	)
-	(wire
-		(pts
-			(xy 530.352 158.75) (xy 537.972 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d7dbd0a-3203-4b39-afe3-1bc5219d2f05")
 	)
 	(wire
 		(pts
@@ -9582,16 +9637,6 @@
 	)
 	(wire
 		(pts
-			(xy 530.352 156.21) (xy 537.972 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56287bfa-7092-4d8c-96d0-66a18e1489d3")
-	)
-	(wire
-		(pts
 			(xy 486.41 48.26) (xy 501.396 48.26)
 		)
 		(stroke
@@ -9612,7 +9657,7 @@
 	)
 	(wire
 		(pts
-			(xy 517.652 158.75) (xy 511.556 158.75)
+			(xy 533.4 152.4) (xy 541.02 152.4)
 		)
 		(stroke
 			(width 0)
@@ -9669,6 +9714,16 @@
 			(type default)
 		)
 		(uuid "5e13a0c8-2c73-49f2-9f99-8545ec71ca3e")
+	)
+	(wire
+		(pts
+			(xy 505.46 154.94) (xy 513.08 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ff38cf2-f3d1-453a-b5a7-b52c325330ad")
 	)
 	(wire
 		(pts
@@ -9972,7 +10027,7 @@
 	)
 	(wire
 		(pts
-			(xy 530.352 161.29) (xy 537.972 161.29)
+			(xy 533.4 162.56) (xy 541.02 162.56)
 		)
 		(stroke
 			(width 0)
@@ -10342,6 +10397,16 @@
 	)
 	(wire
 		(pts
+			(xy 513.08 157.48) (xy 497.84 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fd66194-e4e6-4683-a4c5-354d8470a207")
+	)
+	(wire
+		(pts
 			(xy 443.992 44.45) (xy 443.992 45.212)
 		)
 		(stroke
@@ -10382,7 +10447,17 @@
 	)
 	(wire
 		(pts
-			(xy 511.302 153.162) (xy 511.302 156.21)
+			(xy 497.84 162.56) (xy 497.84 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2b7f124-e282-43b7-a77b-5616c39ae4bb")
+	)
+	(wire
+		(pts
+			(xy 506.73 149.352) (xy 506.73 152.4)
 		)
 		(stroke
 			(width 0)
@@ -10419,6 +10494,16 @@
 			(type default)
 		)
 		(uuid "a54a1f9b-d7d5-403c-b1a3-5cbe0356cd24")
+	)
+	(wire
+		(pts
+			(xy 505.46 160.02) (xy 513.08 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a645af40-4edb-4a8f-9607-e6c23d7a9822")
 	)
 	(wire
 		(pts
@@ -10772,7 +10857,7 @@
 	)
 	(wire
 		(pts
-			(xy 511.302 156.21) (xy 517.652 156.21)
+			(xy 506.73 152.4) (xy 513.08 152.4)
 		)
 		(stroke
 			(width 0)
@@ -11279,6 +11364,16 @@
 			(type default)
 		)
 		(uuid "ec055000-0873-4c78-8217-2d0b83fb6c26")
+	)
+	(wire
+		(pts
+			(xy 497.84 157.48) (xy 497.84 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec355ac6-f12e-4bd7-acf4-010f3d28e74e")
 	)
 	(wire
 		(pts
@@ -14061,13 +14156,13 @@
 		(uuid "19ed7c5c-c6fd-46a9-9ed9-909de65ac62f")
 	)
 	(label "SWDIO"
-		(at 537.972 156.21 180)
+		(at 506.73 154.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "1a961553-4055-4b68-9573-d893e9b39509")
 	)
@@ -14083,13 +14178,13 @@
 		(uuid "2058c7b1-8bb2-4fd5-ac1a-58f12211e888")
 	)
 	(label "~{RESET}"
-		(at 511.556 158.75 0)
+		(at 539.75 152.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "248c40c4-d1d1-43a3-b06d-b8af28bbaa1e")
 	)
@@ -14402,7 +14497,7 @@
 		(uuid "74bd8f15-af06-4fae-a653-f38907b9ed3f")
 	)
 	(label "VREF"
-		(at 511.302 153.162 0)
+		(at 506.73 149.352 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14644,13 +14739,13 @@
 		(uuid "b47e7c25-718d-48a9-8e0d-b178ecfdcbe1")
 	)
 	(label "SWCLK"
-		(at 537.972 158.75 180)
+		(at 506.73 160.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "b5b63a82-22b9-4da5-8c36-468c0c8456a8")
 	)
@@ -14743,7 +14838,7 @@
 		(uuid "cbda5899-15c5-4eab-9d82-82c05b508c6c")
 	)
 	(label "SWO"
-		(at 537.972 161.29 180)
+		(at 541.02 162.56 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21007,155 +21102,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
-		(at 522.732 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "77ea7bd2-f091-4858-933d-f268ecbc41fa")
-		(property "Reference" "SWD1"
-			(at 524.002 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TC2030"
-			(at 524.002 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
-			(at 522.732 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
-			(at 522.732 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Plug-Of-Nails™ Adapter Cable footprint"
-			(at 522.732 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Config" "nofit"
-			(at 522.732 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" ""
-			(at 522.732 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 522.732 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Notes" "For TC2030-IDC"
-			(at 522.732 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Vendor" ""
-			(at 522.732 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SKU" ""
-			(at 522.732 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 522.732 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9595ccf8-5992-4e70-b413-38d95661d9f0")
-		)
-		(pin "2"
-			(uuid "1c906b3f-eee5-4288-87cb-41324055e60a")
-		)
-		(pin "3"
-			(uuid "ec497220-852a-4b5e-b199-b5d1b714e13c")
-		)
-		(pin "4"
-			(uuid "dd97e31d-2b0f-42af-827a-a0240aabad46")
-		)
-		(pin "5"
-			(uuid "64f83b3e-ff86-4e74-90c4-2ce049955603")
-		)
-		(pin "6"
-			(uuid "92657431-5bde-4585-9638-1ce9ce3c585b")
-		)
-		(instances
-			(project "minnow"
-				(path "/bbabdafc-86d4-4010-b464-a3e83875bd6e"
-					(reference "SWD1")
-					(unit 1)
-				)
-			)
-			(project "spirit_logger_hardware"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "SWD1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint_Small")
 		(at 190.5 55.88 0)
 		(unit 1)
@@ -22236,7 +22182,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 511.302 153.162 90)
+		(at 506.73 149.352 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22245,7 +22191,7 @@
 		(dnp no)
 		(uuid "87a3aec1-dc01-4e52-a020-27984251780a")
 		(property "Reference" "TP19"
-			(at 510.159 153.4788 90)
+			(at 505.587 149.6688 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22254,7 +22200,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 512.5793 154.305 0)
+			(at 508.0073 150.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22264,7 +22210,7 @@
 			)
 		)
 		(property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight"
-			(at 511.302 158.242 0)
+			(at 506.73 154.432 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22273,7 +22219,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 511.302 158.242 0)
+			(at 506.73 154.432 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22282,7 +22228,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 511.302 153.162 0)
+			(at 506.73 149.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22291,7 +22237,7 @@
 			)
 		)
 		(property "MFN" ""
-			(at 511.302 153.162 0)
+			(at 506.73 149.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22300,7 +22246,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 511.302 153.162 0)
+			(at 506.73 149.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22309,7 +22255,7 @@
 			)
 		)
 		(property "Notes" ""
-			(at 511.302 153.162 0)
+			(at 506.73 149.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22318,7 +22264,7 @@
 			)
 		)
 		(property "Config" "nofit"
-			(at 511.302 153.162 0)
+			(at 506.73 149.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22327,7 +22273,7 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 511.302 153.162 0)
+			(at 506.73 149.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22336,7 +22282,7 @@
 			)
 		)
 		(property "SKU" ""
-			(at 511.302 153.162 0)
+			(at 506.73 149.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22345,7 +22291,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 511.302 153.162 0)
+			(at 506.73 149.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23241,7 +23187,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 511.302 165.862 0)
+		(at 497.84 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23249,7 +23195,7 @@
 		(dnp no)
 		(uuid "95397b6d-b912-4ebb-87ac-8021b7f6da27")
 		(property "Reference" "#PWR04"
-			(at 511.302 172.212 0)
+			(at 497.84 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23258,7 +23204,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 511.302 169.672 0)
+			(at 497.84 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23266,7 +23212,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 511.302 165.862 0)
+			(at 497.84 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23275,7 +23221,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 511.302 165.862 0)
+			(at 497.84 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23284,7 +23230,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 511.302 165.862 0)
+			(at 497.84 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25015,7 +24961,8 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 537.972 156.21 0)
+		(at 505.46 154.94 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25024,7 +24971,7 @@
 		(fields_autoplaced yes)
 		(uuid "b2699741-1e31-493b-b8a3-3daa3be2e0c0")
 		(property "Reference" "TP9"
-			(at 539.115 155.5663 0)
+			(at 504.317 154.2963 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25033,7 +24980,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 539.115 157.4873 0)
+			(at 504.317 156.2173 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25043,7 +24990,7 @@
 			)
 		)
 		(property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight"
-			(at 543.052 156.21 0)
+			(at 500.38 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25052,7 +24999,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 543.052 156.21 0)
+			(at 500.38 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25061,7 +25008,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 537.972 156.21 0)
+			(at 505.46 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25070,7 +25017,7 @@
 			)
 		)
 		(property "MFN" ""
-			(at 537.972 156.21 0)
+			(at 505.46 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25079,7 +25026,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 537.972 156.21 0)
+			(at 505.46 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25088,7 +25035,7 @@
 			)
 		)
 		(property "Notes" ""
-			(at 537.972 156.21 0)
+			(at 505.46 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25097,7 +25044,7 @@
 			)
 		)
 		(property "Config" "nofit"
-			(at 537.972 156.21 0)
+			(at 505.46 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25106,7 +25053,7 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 537.972 156.21 0)
+			(at 505.46 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25115,7 +25062,7 @@
 			)
 		)
 		(property "SKU" ""
-			(at 537.972 156.21 0)
+			(at 505.46 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25124,7 +25071,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 537.972 156.21 0)
+			(at 505.46 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26151,7 +26098,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 537.972 161.29 0)
+		(at 541.02 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26160,7 +26107,7 @@
 		(fields_autoplaced yes)
 		(uuid "c0ab294e-ed66-4b00-aed4-873403387c08")
 		(property "Reference" "TP1"
-			(at 539.115 160.6463 0)
+			(at 542.163 161.9163 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26169,7 +26116,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 539.115 162.5673 0)
+			(at 542.163 163.8373 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26179,7 +26126,7 @@
 			)
 		)
 		(property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight"
-			(at 543.052 161.29 0)
+			(at 546.1 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26188,7 +26135,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 543.052 161.29 0)
+			(at 546.1 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26197,7 +26144,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 537.972 161.29 0)
+			(at 541.02 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26206,7 +26153,7 @@
 			)
 		)
 		(property "MFN" ""
-			(at 537.972 161.29 0)
+			(at 541.02 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26215,7 +26162,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 537.972 161.29 0)
+			(at 541.02 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26224,7 +26171,7 @@
 			)
 		)
 		(property "Notes" ""
-			(at 537.972 161.29 0)
+			(at 541.02 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26233,7 +26180,7 @@
 			)
 		)
 		(property "Config" "nofit"
-			(at 537.972 161.29 0)
+			(at 541.02 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26242,7 +26189,7 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 537.972 161.29 0)
+			(at 541.02 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26251,7 +26198,7 @@
 			)
 		)
 		(property "SKU" ""
-			(at 537.972 161.29 0)
+			(at 541.02 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26260,7 +26207,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 537.972 161.29 0)
+			(at 541.02 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26275,6 +26222,158 @@
 			(project "minnow"
 				(path "/bbabdafc-86d4-4010-b464-a3e83875bd6e"
 					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TC2050-IDC:TC2050-IDC")
+		(at 523.24 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0f94265-8abd-473c-846a-5288d0b0126b")
+		(property "Reference" "J6"
+			(at 523.24 143.51 0)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+			)
+		)
+		(property "Value" "*"
+			(at 523.24 147.32 0)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+			)
+		)
+		(property "Footprint" "TC2050-IDC:TAG-CONNECT_TC2050-IDC"
+			(at 523.24 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 523.24 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cbl Plug-Of-Nails 10-Pin w/Legs"
+			(at 523.24 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ALTIUM_VALUE" "*"
+			(at 523.24 157.48 0)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 523.24 157.48 0)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Unavailable"
+			(at 523.24 157.48 0)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 523.24 157.48 0)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MP" "TC2050-IDC"
+			(at 523.24 157.48 0)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 523.24 157.48 0)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "27893176-8fca-4509-a274-9b6f13c07ef2")
+		)
+		(pin "5"
+			(uuid "6fd94e2d-f5e7-40de-9c00-e203ef46fd53")
+		)
+		(pin "7"
+			(uuid "b1a538da-dac4-4df7-98fd-69914581b7de")
+		)
+		(pin "1"
+			(uuid "f2cafcdf-fff6-4e0c-a10b-a6d14e28c042")
+		)
+		(pin "9"
+			(uuid "8fb52d4d-601b-457a-b78e-d20a9ad0a834")
+		)
+		(pin "3"
+			(uuid "21705d55-c3b1-49a9-991e-08c430bd647f")
+		)
+		(pin "10"
+			(uuid "0e1753be-5f3b-4b41-8d68-354064a02369")
+		)
+		(pin "8"
+			(uuid "c2071558-7131-43dd-b91d-57902852124d")
+		)
+		(pin "2"
+			(uuid "3190560f-5fc5-4184-9a67-a06a42904f61")
+		)
+		(pin "6"
+			(uuid "c8a863c9-783c-4430-a9a0-ed62257113e1")
+		)
+		(instances
+			(project ""
+				(path "/bbabdafc-86d4-4010-b464-a3e83875bd6e"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -26958,8 +27057,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 511.556 158.75 0)
-		(mirror y)
+		(at 541.02 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26967,7 +27065,7 @@
 		(dnp no)
 		(uuid "d557f5dc-2412-403a-8ace-0f73a516edab")
 		(property "Reference" "TP10"
-			(at 510.413 159.0668 0)
+			(at 542.163 152.7168 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26976,7 +27074,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 510.413 160.0273 0)
+			(at 542.163 153.6773 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26986,7 +27084,7 @@
 			)
 		)
 		(property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight"
-			(at 506.476 158.75 0)
+			(at 546.1 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26995,7 +27093,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 506.476 158.75 0)
+			(at 546.1 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27004,7 +27102,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 511.556 158.75 0)
+			(at 541.02 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27013,7 +27111,7 @@
 			)
 		)
 		(property "MFN" ""
-			(at 511.556 158.75 0)
+			(at 541.02 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27022,7 +27120,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 511.556 158.75 0)
+			(at 541.02 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27031,7 +27129,7 @@
 			)
 		)
 		(property "Notes" ""
-			(at 511.556 158.75 0)
+			(at 541.02 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27040,7 +27138,7 @@
 			)
 		)
 		(property "Config" "nofit"
-			(at 511.556 158.75 0)
+			(at 541.02 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27049,7 +27147,7 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 511.556 158.75 0)
+			(at 541.02 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27058,7 +27156,7 @@
 			)
 		)
 		(property "SKU" ""
-			(at 511.556 158.75 0)
+			(at 541.02 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27067,7 +27165,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 511.556 158.75 0)
+			(at 541.02 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27353,7 +27451,8 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 537.972 158.75 0)
+		(at 505.46 160.02 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27362,7 +27461,7 @@
 		(fields_autoplaced yes)
 		(uuid "e469920f-f855-40bf-98b5-11f9e3b165fb")
 		(property "Reference" "TP2"
-			(at 539.115 158.1063 0)
+			(at 504.317 159.3763 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27371,7 +27470,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 539.115 160.0273 0)
+			(at 504.317 161.2973 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27381,7 +27480,7 @@
 			)
 		)
 		(property "Footprint" "tuna-f1sh/jbr-kicad/Misc.pretty:TestPoint_Pad_D1.0mm_Tight"
-			(at 543.052 158.75 0)
+			(at 500.38 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27390,7 +27489,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 543.052 158.75 0)
+			(at 500.38 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27399,7 +27498,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 537.972 158.75 0)
+			(at 505.46 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27408,7 +27507,7 @@
 			)
 		)
 		(property "MFN" ""
-			(at 537.972 158.75 0)
+			(at 505.46 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27417,7 +27516,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 537.972 158.75 0)
+			(at 505.46 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27426,7 +27525,7 @@
 			)
 		)
 		(property "Notes" ""
-			(at 537.972 158.75 0)
+			(at 505.46 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27435,7 +27534,7 @@
 			)
 		)
 		(property "Config" "nofit"
-			(at 537.972 158.75 0)
+			(at 505.46 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27444,7 +27543,7 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 537.972 158.75 0)
+			(at 505.46 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27453,7 +27552,7 @@
 			)
 		)
 		(property "SKU" ""
-			(at 537.972 158.75 0)
+			(at 505.46 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27462,7 +27561,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 537.972 158.75 0)
+			(at 505.46 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
