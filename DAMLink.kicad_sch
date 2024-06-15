@@ -508,8 +508,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J6"
-				(at -11.43 1.2701 0)
+			(property "Reference" "J"
+				(at -8.89 16.51 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -518,15 +518,15 @@
 				)
 			)
 			(property "Value" "Conn_ST_STDC14"
-				(at -11.43 -1.2699 0)
+				(at 17.78 16.51 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify right bottom)
 				)
 			)
-			(property "Footprint" "Connector_STDC14:SAMTEC_FTSH-107-01-L-DV-K-A"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -536,7 +536,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/user_manual/group1/99/49/91/b6/b2/3a/46/e5/DM00526767/files/DM00526767.pdf/jcr:content/translations/en.DM00526767.pdf"
-				(at -18.034 -30.734 90)
+				(at -8.89 -31.75 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -595,151 +595,7 @@
 							)
 						)
 					)
-					(number "01"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -10.16 2.54 0)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "02"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 17.78 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "03"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "JTMS/SWDIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "04"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "05"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 7.62 180)
-					(length 2.54)
-					(name "JCLK/SWCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "06"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "07"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "JTDO/SWO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "08"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 -5.08 180)
-					(length 2.54)
-					(name "JRCLK/NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "09"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -830,6 +686,150 @@
 						)
 					)
 					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -10.16 2.54 0)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 17.78 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "JTMS/SWDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -17.78 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 7.62 180)
+					(length 2.54)
+					(name "JCLK/SWCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 90)
+					(length 2.54) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 2.54 180)
+					(length 2.54)
+					(name "JTDO/SWO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "JRCLK/NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -21405,7 +21405,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TMUX1574RSVR:IC_TMUX1574RSVR"
+		(property "Footprint" "TMUX1574RSVR:RSV16_TEX"
 			(at 320.04 201.93 0)
 			(effects
 				(font
@@ -24431,7 +24431,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TC2050-IDC:TAG-CONNECT_TC2050-IDC"
+		(property "Footprint" "Connector:Tag-Connect_TC2050-IDC-FP_2x05_P1.27mm_Vertical"
 			(at 523.24 157.48 0)
 			(effects
 				(font
@@ -26062,28 +26062,28 @@
 		(pin "13"
 			(uuid "f4d601a7-e789-456e-8fd9-228d4e362cd9")
 		)
-		(pin "05"
+		(pin "4"
 			(uuid "badda51f-82c7-4245-8b72-9c695d53f80b")
 		)
-		(pin "07"
+		(pin "7"
 			(uuid "5a9f34a8-9ab1-46ac-aee5-b876079b37a6")
 		)
 		(pin "14"
 			(uuid "023e67f1-05a3-42ed-9ea9-a5b6ca8cee0f")
 		)
-		(pin "04"
+		(pin "8"
 			(uuid "ddc56256-3e11-4c2c-bc08-3b3a60e191a7")
 		)
 		(pin "10"
 			(uuid "a47266a5-ee5f-40e0-960b-c60e92c41911")
 		)
-		(pin "01"
+		(pin "6"
 			(uuid "e7146776-bd58-4456-9d5e-80562af0a899")
 		)
-		(pin "08"
+		(pin "9"
 			(uuid "971bec6c-5653-46d9-b2a3-c9d805ac39db")
 		)
-		(pin "03"
+		(pin "2"
 			(uuid "3ea741da-d096-450b-a6ad-a5aad45a3523")
 		)
 		(pin "12"
@@ -26092,13 +26092,13 @@
 		(pin "11"
 			(uuid "8d2f4d88-02cb-4350-a5ec-a0bcfcf69a4b")
 		)
-		(pin "09"
+		(pin "1"
 			(uuid "a7f4d2db-362a-4fc2-827c-cd9704b13a17")
 		)
-		(pin "06"
+		(pin "3"
 			(uuid "f002bf47-f09c-443f-8674-7970a0e5c0d2")
 		)
-		(pin "02"
+		(pin "5"
 			(uuid "060ac5c6-03f7-4c76-9639-d7d84973b448")
 		)
 		(instances
