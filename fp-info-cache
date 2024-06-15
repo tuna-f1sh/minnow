@@ -1,4 +1,4 @@
-23590466263305683
+23593903176927109
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -43694,9 +43694,23 @@ SATA
 24
 23
 Connector_STDC14
-SAMTEC_FTSH-107-01-L-DV-K-A
+CON14_2X7_DUK_FTSH_SAI
 
+FTSH-107-01-L-DV-K 
+0
+14
+14
+Connector_STDC14
+CON14_2X7_DUK_FTSH_SAI-L
 
+FTSH-107-01-L-DV-K 
+0
+14
+14
+Connector_STDC14
+CON14_2X7_DUK_FTSH_SAI-M
+
+FTSH-107-01-L-DV-K 
 0
 14
 14
