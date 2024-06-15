@@ -15,7 +15,7 @@
 	)
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
+		(31 "B.Cu" power)
 		(32 "B.Adhes" user "B.Adhesive")
 		(33 "F.Adhes" user "F.Adhesive")
 		(34 "B.Paste" user)
@@ -36,15 +36,47 @@
 		(49 "F.Fab" user)
 		(50 "User.1" user)
 		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(thickness 1.51)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(pcbplotparams
@@ -73,16 +105,16 @@
 			(psnegative no)
 			(psa4output no)
 			(plotreference yes)
-			(plotvalue yes)
+			(plotvalue no)
 			(plotfptext yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "Gerber/")
 		)
 	)
 	(net 0 "")
@@ -119,7 +151,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Bridged12"
-			(at 0 1.9 90)
+			(at 0 -12 180)
 			(layer "F.Fab")
 			(uuid "5b540c49-bc1f-4399-a91a-b5065bd8b327")
 			(effects
@@ -433,7 +465,7 @@
 			)
 		)
 		(property "Value" "Conn_ARM_JTAG_SWD_10"
-			(at -55.5025 1.78 0)
+			(at 22.9475 5.58 0)
 			(layer "F.Fab")
 			(uuid "e164f2af-28e3-4db3-8b82-4d820446af4c")
 			(effects
@@ -989,7 +1021,7 @@
 			)
 		)
 		(property "Value" "Conn_ARM_JTAG_SWD_20"
-			(at 6.215 28.96 360)
+			(at 23.1975 11.68 360)
 			(layer "F.Fab")
 			(uuid "4129eef5-5e3f-4e87-b66f-d2d8ed68303d")
 			(effects
@@ -1921,7 +1953,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Bridged12"
-			(at 0 1.9 360)
+			(at -4.75 -2 360)
 			(layer "F.Fab")
 			(uuid "cfab5c3b-9f5a-43e3-9f72-6fe7a02da75c")
 			(effects
@@ -2338,7 +2370,7 @@
 			(xy 178.5825 99.68) (xy 171.4525 99.68) (xy 143.0475 106.53)
 		)
 		(stroke
-			(width 0.05)
+			(width 0.25)
 			(type solid)
 		)
 		(fill none)
@@ -3179,7 +3211,7 @@
 		(net 11)
 		(net_name "+5V")
 		(layer "F.Cu")
-		(uuid "637fef9f-79b2-473d-902d-97b05f16c8af")
+		(uuid "1f2ac3ea-2b95-4f03-b8e1-75d61430836d")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
 		(priority 30002)
@@ -3636,7 +3668,7 @@
 		(net 1)
 		(net_name "GND")
 		(layer "F.Cu")
-		(uuid "bc1a6b5f-003a-468d-ab4f-fda900390860")
+		(uuid "d9fe7e41-d19a-4eec-a22c-3e33e1662f31")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
 		(priority 30001)
@@ -3674,7 +3706,7 @@
 		(net 1)
 		(net_name "GND")
 		(layer "F.Cu")
-		(uuid "c32a51e9-d6e4-4542-b3b7-c0c361f5f81e")
+		(uuid "f7f0fa9f-8740-4ef8-ad13-70328ccddf64")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
 		(priority 30000)
@@ -3711,7 +3743,7 @@
 		(net 11)
 		(net_name "+5V")
 		(layer "B.Cu")
-		(uuid "44b6af90-baa0-4a9a-a6c8-002a78d5388e")
+		(uuid "1714a44f-15e1-4ef1-a952-4f1acb5eb12a")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
 		(priority 30000)
