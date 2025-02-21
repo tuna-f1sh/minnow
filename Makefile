@@ -16,13 +16,13 @@ KICADMK_APPEND_GIT ?= 1
 PCB_PDF_FLAGS = --ibt
 
 # Define a command that generates a BoM - kibom installed with pip by default but could be path to Python script
-# BOM_CMD ?= kibom
+BOM_CMD ?= kibom
 # KiBoM by default creates output with _bom_REV.csv appended, pass a config file to it to match target BoM name
-# BOM_CMD_FLAGS = --cfg $(PROJECT_ROOT)/bom.ini
-# ifneq ($(VARIANT),)
-# 	BOM_CMD_FLAGS += --variant $(VARIANT)
-# 	BOM_FILENAME = $(PROJECT_NAME)-$(VARIANT).csv
-# endif
+BOM_CMD_FLAGS = --cfg $(PROJECT_ROOT)/bom.ini
+ifneq ($(VARIANT),)
+	BOM_CMD_FLAGS += --variant $(VARIANT)
+	BOM_FILENAME = $(PROJECT_NAME)-$(VARIANT).csv
+endif
 
 # Optionally include a supplier Makefile to define flags used by that supplier
 include $(KICADMK_DIR)/suppliers/PCBWay.mk
