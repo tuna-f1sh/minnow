@@ -1,16 +1,27 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "pyftdi==0.56.0",
+# ]
+# ///
 """
 Provision a new Minnow device with a unique incrementing serial number and records the device and serial number in a file
 
 Writes the EEPROM './pyftdi-minnow.ini' file with the device serial number
 """
 import os
+import io
 import sys
+import re
 import datetime
 import logging
 
 from pyftdi.ftdi import Ftdi
-from pyftdi.bin import ftconf
+# bin not exported as module so HACK to add to path
+venv_path = os.path.join(os.getenv("VIRTUAL_ENV"), 'bin')
+sys.path.append(venv_path)
+import ftconf
 
 logger = logging.getLogger('provision')
 logging.basicConfig(level=logging.INFO)
@@ -33,8 +44,12 @@ def select_device(devices):
 
 def get_first_device():
     """Return the first FTDI device found"""
-    devices = Ftdi.list_devices_urls()
-    return select_device(devices)
+    # textio stream to capture
+    # used to provide urls but now have to extract...
+    out = io.StringIO()
+    _ = Ftdi.show_devices(out=out)
+    urls = re.findall(r'(ftdi://\S+)', out.getvalue().strip())
+    return select_device(urls)
 
 def get_device_num(fn: str = 'devices.txt'):
     # create file if not exists
@@ -47,7 +62,7 @@ def get_device_num(fn: str = 'devices.txt'):
         return len(lines)
 
 VERSION = 0x1
-DEVICE = get_first_device()[0]
+DEVICE = get_first_device()
 DT = datetime.datetime.now()
 YEAR = DT.year % 100
 FILE = f'./devices_{YEAR:02d}{VERSION:01x}.txt'
