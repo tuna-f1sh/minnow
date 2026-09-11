@@ -66,13 +66,13 @@ jobs:
 
     steps:
       - name: Download outputs
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: kicad-makefile-output
           path: output
 
       - name: Publish GitHub release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           fail_on_unmatched_files: false
           files: |
